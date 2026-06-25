@@ -1,0 +1,41 @@
+:root{
+  --coral:#E8726B; --coral-d:#d85e57; --cream:#FDF5F0; --card:#fff;
+  --ink:#33282a; --mute:#8a7d7d; --line:#efe2dc;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  color:var(--ink);background:var(--cream);line-height:1.65;-webkit-font-smoothing:antialiased}
+a{color:var(--coral-d);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:920px;margin:0 auto;padding:0 22px}
+header.nav{position:sticky;top:0;background:rgba(253,245,240,.92);backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--line);z-index:10}
+.nav .wrap{display:flex;align-items:center;gap:14px;height:64px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:20px;color:var(--coral)}
+.brand img{width:30px;height:30px;border-radius:8px}
+.nav nav{margin-left:auto;display:flex;gap:20px;font-size:15px;font-weight:600}
+.nav nav a{color:var(--ink)}
+.hero{text-align:center;padding:64px 0 40px}
+.hero img.icon{width:104px;height:104px;border-radius:24px;box-shadow:0 10px 30px rgba(232,114,107,.28)}
+.hero h1{font-size:46px;margin:22px 0 8px;letter-spacing:-.5px}
+.hero p.tag{font-size:20px;color:var(--mute);max-width:560px;margin:0 auto 26px}
+.badge{display:inline-block;background:var(--coral);color:#fff;font-weight:700;padding:13px 26px;
+  border-radius:14px;font-size:16px}
+.badge.ghost{background:#fff;color:var(--ink);border:2px solid var(--line)}
+.shots{display:flex;gap:16px;overflow-x:auto;padding:34px 0;scroll-snap-type:x mandatory}
+.shots img{width:230px;border-radius:20px;box-shadow:0 8px 24px rgba(0,0,0,.10);scroll-snap-align:center;flex:0 0 auto}
+.features{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px;padding:30px 0 50px}
+.feat{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px}
+.feat h3{font-size:18px;margin-bottom:6px}
+.feat p{color:var(--mute);font-size:15px}
+.feat .e{font-size:30px}
+section.page{background:var(--card);border:1px solid var(--line);border-radius:20px;
+  padding:34px;margin:30px 0}
+section.page h1{font-size:32px;margin-bottom:6px}
+section.page h2{font-size:21px;margin:26px 0 8px}
+section.page p,section.page li{color:#4a3f40;margin-bottom:10px}
+section.page ul{padding-left:22px}
+.muted{color:var(--mute);font-size:14px}
+footer{border-top:1px solid var(--line);padding:30px 0;text-align:center;color:var(--mute);font-size:14px}
+footer a{margin:0 10px}
